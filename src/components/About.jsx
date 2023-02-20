@@ -3,7 +3,6 @@ import React from "react";
 const About = () => { 
   return (
     <div
-      name="about"
       id="about"
       className="w-full h-screen bg-[#0a192f] text-gray-300"
     >
@@ -20,17 +19,17 @@ const About = () => {
           <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
             <div className="sm:text-right text-4xl font-bold">
               <p>
-                Hi. I'm Taminoturoko Briggs, nice to meet you. Please take a
-                look around.
+                Hi. I'm Hardik Ghusar, nice to meet you
               </p>
+              <div className="mt-4 text-lg self-start">
+                Email: ghusarhardikr@gmail.com
+              </div>
             </div>
             <div>
               <p>
                 {" "}
-                A software developer with experience in building Responsive and
-                Scalable Web apps. I am well-knowledged in UI/UX principles and
-                practices. In addition to software development, I am also a
-                technical writer--simplifying topics/concepts on the web.
+                I am Senior Software Engineer with 5 years of experience in bulding microservices from scratch, web development and game development.
+                Experience in working on NodeJS, React, Couchbase, PostgreSQL.
               </p>
             </div>
           </div>
