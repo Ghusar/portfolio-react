@@ -13,15 +13,21 @@ module.exports = {
         }),
     ],
     devServer: {
-        port: 3030, // you can change the port
+        port: 3000, // you can change the port
     },
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/, // .js and .jsx files
                 exclude: /node_modules/, // excluding the node_modules folder
+                resolve: {
+                    extensions: [".js", ".jsx"]
+                },
                 use: {
                     loader: "babel-loader",
+                    options: {
+                        "presets": ["@babel/preset-env", "@babel/preset-react"]
+                    }
                 },
             },
             {
@@ -33,6 +39,7 @@ module.exports = {
                 loader: "url-loader",
                 options: { limit: false },
             },
+       
         ],
     },
 };
